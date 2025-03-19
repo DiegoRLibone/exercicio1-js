@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio 9</title>
+    </head>
+    <body>
+        <h1>Atividade 9-35</h1>
+
+        <script>
+            let dep = Number(prompt("Diga o seu depósito mensal:"));
+            let taxa = Number(prompt("Diga o número da taxa (em %):"));
+        
+            taxa = taxa / 100; // Convertendo a taxa para decimal
+        
+            // Fórmula corrigida para o montante com depósitos mensais
+            let rend = dep * (Math.pow(1 + taxa, 12) - 1) / taxa; //math.pow serviu para conseguirmos utilizar o elevado, da fórmula que deveria ser utilizada
+        
+            document.write("Seu montante em 12 meses será de: " + rend.toFixed(2)); // .toFixed(2) serve para determinar o número de decimais
+        </script>
+
+    </body>
+</html>
