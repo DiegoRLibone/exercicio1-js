@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio 21</title>
+    </head>
+    <body>
+        <h1>Atividade 21-35</h1>
+
+        <script>
+            alert("Digite a idade de 5 pessoas");
+
+            //variáveis para menor ou maior de idade
+
+            let maiores = 0;
+            let menores = 0;
+            
+            // O usuário coloca as idades
+
+            let idade1 = parseInt(prompt("Digite a idade da primeira pessoa:"));
+            let idade2 = parseInt(prompt("Digite a idade da segunda pessoa:"));
+            let idade3 = parseInt(prompt("Digite a idade da terceira pessoa:"));
+            let idade4 = parseInt(prompt("Digite a idade da quarta pessoa:"));
+            let idade5 = parseInt(prompt("Digite a idade da quinta pessoa:"));
+
+            //verifica se é maior ou menor de idade
+
+            idade1 < 18 ? menores++ : maiores++ 
+            idade2 < 18 ? menores++ : maiores++ 
+            idade3 < 18 ? menores++ : maiores++ 
+            idade4 < 18 ? menores++ : maiores++ 
+            idade5 < 18 ? menores++ : maiores++ 
+            // exemplo abaixo de como funciona o código acima
+
+                /*if(idade1 < 18){ 
+                    menores++
+                }else{
+                    maiores++
+                }*/
+
+            document.write("Maiores de idade: " + maiores + "<br>");
+            document.write("Menores de idade: " + menores);
+
+        </script>
+    </body>
+</html>

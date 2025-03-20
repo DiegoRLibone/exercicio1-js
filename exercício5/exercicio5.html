@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio 5</title>
+    </head>
+    <body>
+        <h1>Atividade 5-35</h1>
+
+        <script>
+            var preco = parseFloat(prompt("Diga o preço do produto"))
+            var quant =  parseInt(prompt("Diga a quantidade que você deseja comprar"))
+
+            let valor = preco * quant
+
+            if (quant >= 10){
+                document.write("Parabéns! você adquiriu desconto de 10% por comprar mais que 10 unidades e por isso, o valor da compra ficou de: R$" + (valor - (valor*0.10)))
+            }else{
+                document.write("Você sabia que comprando mais que 10 unidades do produto com a gente você ganharia 10% de desconto? Bom, sem isso o valor ficou de: R$" + valor)
+            }
+
+        </script>
+
+    </body>
+</html>

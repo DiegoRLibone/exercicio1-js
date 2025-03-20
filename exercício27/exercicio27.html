@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio 27</title>
+    </head>
+    <body>
+        <h1>Atividade 27-35</h1>
+
+        <script>
+            let idade = Number(prompt("Me diga qual a sua idade: "))
+            let sexo = prompt("Me diga qual o seu sexo (masculino ou feminino): ")
+            
+            if (idade < 62 && sexo == "feminino" || idade < 65 && sexo == "masculino"){
+                document.write("Você não pode se aponsentar!!")
+            } else if (idade >= 62 && sexo == "feminino" || idade >= 65 && sexo == "masculino") {
+                document.write("Você pode se aposentar")
+            }
+        </script>
+    </body>
+</html>

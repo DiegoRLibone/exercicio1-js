@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio 26</title>
+    </head>
+    <body>
+        <h1>Atividade 26-35</h1>
+
+        <script>
+            let preço = Number(prompt("Me fale o preço do produto: "))
+            let quantidade = Number(prompt("Me fale agora a quantidade que comprou desse produto: "))
+            document.write(`O preço total a ser pago é ${(preço*quantidade).toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})}`)// desde o .toLocale>string vimos uma forma de colocar o cifrão brasileiro e a forma de colocar virgula no valor do produto, ou seja o jeito brasileiro
+        </script>
+    </body>
+</html>

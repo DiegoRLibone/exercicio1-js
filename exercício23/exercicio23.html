@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio 23</title>
+    </head>
+    <body>
+        <h1>Atividade 23-35</h1>
+
+        <script>
+            let mes = prompt("Digite o nome do mês: ").toLowerCase() // Converte para letras minúsculas
+
+            if (mes === "janeiro" || mes === "março" || mes === "maio" || mes === "julho" || mes === "outubro" || mes === "dezembro") { 
+                document.write("O mês " + mes+ " tem 31 dias.")
+            } else if (mes === "fevereiro") {
+                document.write("O mês " + mes + " tem 28 dias.")
+            } else if (mes === "abril" || mes === "junho" || mes === "setembro" || mes === "novembro") {
+                document.write("O mês " +  mes + " tem 30 dias.")
+            } else {
+                document.write("Mês não reconhecido! Certifique-se escreveu corretamente.")
+            }
+
+            // === significa que os elementos são iguais
+
+        </script>
+    </body>
+</html>
